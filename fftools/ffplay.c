@@ -3289,7 +3289,7 @@ static void event_loop(VideoState *cur_stream)
         case SDL_KEYDOWN:
             if (exit_on_keydown || event.key.keysym.sym == SDLK_ESCAPE || event.key.keysym.sym == SDLK_q) {
 
-                break;
+                
             }
             // If we don't yet have a window, skip all key events, because read_thread might still be initializing...
             if (!cur_stream->width)
@@ -3297,75 +3297,75 @@ static void event_loop(VideoState *cur_stream)
             switch (event.key.keysym.sym) {
             case SDLK_f:
 
-                break;
+                
             case SDLK_p:
             case SDLK_SPACE:
 
-                break;
+               
             case SDLK_m:
 
-                break;
+               
             case SDLK_KP_MULTIPLY:
             case SDLK_0:
 
-                break;
+                
             case SDLK_KP_DIVIDE:
             case SDLK_9:
 
-                break;
+                
             case SDLK_s: // S: Step to next frame
 
-                break;
+               
             case SDLK_a:
 
-                break;
+               
             case SDLK_v:
 
-                break;
+               
             case SDLK_c:
 
-                break;
+               
             case SDLK_t:
 
-                break;
+               
             case SDLK_w:
 
-                break;
+              
             case SDLK_PAGEUP:
 
-                break;
+               
             case SDLK_PAGEDOWN:
 
-                break;
+                
             case SDLK_LEFT:
 
-                break;
+               
             case SDLK_RIGHT:
-                break;
+               
             case SDLK_UP:
-                break;
+               
             case SDLK_DOWN:
 
-                break;
+                
             default:
-                break;
+               
             }
-            break;
+           
         case SDL_MOUSEBUTTONDOWN:
 
-            break;
+            
         case SDL_MOUSEMOTION:
 
-            break;
+           
         case SDL_WINDOWEVENT:
 
-            break;
+           
         case SDL_QUIT:
         case FF_QUIT_EVENT:
 
-            break;
+           
         default:
-            break;
+            
         }
     }
 }
